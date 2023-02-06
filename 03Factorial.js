@@ -13,3 +13,20 @@ function factorial(n){
 console.log(factorial(0))
 console.log(factorial(1))
 console.log(factorial(5))
+
+
+
+
+
+//recursive solution -  Big-O = O(n) 
+
+function recursivefact(n){
+    if(n===0) return 1          //base case, 0! = 1
+
+    let factorial = n * recursivefact(n-1)
+    return factorial
+}
+
+console.log(recursivefact(0))
+console.log(recursivefact(1))
+console.log(recursivefact(5))

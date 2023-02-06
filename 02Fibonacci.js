@@ -19,3 +19,19 @@ console.log(fibonacci(7))
 
 
 
+
+
+//given n find the fibonacci of the nth element. Recursive solution
+ 
+function recursiveFib(n){
+    if(n<2) return n              //base case
+    return recursiveFib(n-1) + recursiveFib(n-2)
+}
+
+console.log(recursiveFib(7))
+
+
+
+// O(2^n)     -- as the  function is called twice everytime.
+
+// O(2^n) is worst TC than the iterative solution with O(n) TC. thus recursion for fib is not useful.
